@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planning Partagé</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Planning Partagé</h1>
+    </header>
+
+    <main>
+      <div id="calendar"></div>
+      <button id="add-appointment">Ajouter un rendez-vous</button>
+    </main>
+
+    <!-- Modale pour ajouter un rendez-vous -->
+    <div id="modal" style="display: none;">
+      <div id="modal-content">
+        <h2>Ajouter un rendez-vous</h2>
+        <form id="appointment-form">
+          <label for="date">Date :</label>
+          <input type="date" id="date" required>
+          <label for="time">Heure :</label>
+          <input type="time" id="time" required>
+          <label for="title">Titre :</label>
+          <input type="text" id="title" placeholder="Titre du rendez-vous" required>
+          <label for="description">Description :</label>
+          <textarea id="description" placeholder="Détails"></textarea>
+          <button type="submit">Enregistrer</button>
+        </form>
+        <button id="close-modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
