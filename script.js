@@ -3,8 +3,8 @@ const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 
 // Supabase client
 
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 const { createClient } = supabase;
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 const calendar = document.getElementById("calendar");
 const modal = document.getElementById("modal");
