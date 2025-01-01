@@ -2,8 +2,9 @@ const SUPABASE_URL = "https://bhobphbpwdshepyixjlu.supabase.co"; // Remplace par
 const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJob2JwaGJwd2RzaGVweWl4amx1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU1NTQ4MjEsImV4cCI6MjA1MTEzMDgyMX0.evJ3bYl-m25OIc9y4I5eIGFmP4_ZTEChImfo8kHuj2Y"; // Remplace par ta clé publique
 
 // Supabase client
-const { createClient } = supabase;
+
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+const { createClient } = supabase;
 
 const calendar = document.getElementById("calendar");
 const modal = document.getElementById("modal");
